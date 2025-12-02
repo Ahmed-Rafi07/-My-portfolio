@@ -1,269 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ahmed Rafi - Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!-- Primary SEO -->
+    <meta name="title" content="Ahmed Rafi | Full-Stack Developer" />
+    <meta name="description" content="Ahmed Rafi — Aspiring Full-Stack Developer skilled in React, Node.js, MongoDB, and modern web technologies. Passionate about building interactive and scalable applications." />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ahmedrafi.me/" />
+    <meta property="og:title" content="Ahmed Rafi | Full-Stack Developer" />
+    <meta property="og:description" content="Portfolio showcasing projects, skills, and achievements." />
+    <meta property="og:image" content="https://ahmedrafi.me/profile-image%202.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ahmedrafi.me/" />
+    <meta property="twitter:title" content="Ahmed Rafi | Full-Stack Developer" />
+    <meta property="twitter:description" content="Portfolio showcasing projects, skills, and achievements." />
+    <meta property="twitter:image" content="https://ahmedrafi.me/profile-image%202.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="profile-image 2.jpg" />
+
+    <!-- Person Schema (helps Google show your card when searching your name) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ahmed Rafi",
+      "url": "https://ahmedrafi.me",
+      "image": "https://ahmedrafi.me/profile-image%202.jpg",
+      "jobTitle": "Full-Stack Developer",
+      "sameAs": [
+        "https://github.com/Ahmed-Rafi07",
+        "https://www.linkedin.com/in/ahmed-rafi-12956a328/"
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
 
     <script src="app.js" defer></script>
 </head>
 
 <body>
-
-<!-- ================= NAVBAR ================= -->
-<header>
+  <!-- ================= NAVBAR ================= -->
+  <header>
     <div class="navbar">
-        <ul>
-            <li><a href="#profile">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#project-container">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-
-            <!-- Theme Toggle -->
-            <li>
-                <button id="theme-toggle" class="theme-toggle">
-                <i class="toggle-icon fa-solid fa-sun"></i>
-                </button>
-            </li>
-        </ul>
-    </div>
-
-    <!-- ================= PROFILE SECTION ================= -->
-    <div class="profile" id="profile">
-        <div class="profile-img">
-            <img src="profile-image 2.jpg" alt="My profile">
-        </div>
-
-        <div class="profile-info">
-            <h1>Ahmed Rafi</h1>
-
-            <!-- 3D Subtitle -->
-            <h2>Aspiring Full-Stack Developer | Problem Solver | Creator</h2>
-        </div>
-    </div>
-</header>
-
-
-<!-- ================= ABOUT SECTION ================= -->
-<div class="About" id="About">
-    <h1>About me</h1>
-
-    <div class="about-info">
-        <p>
-            Hi, I'm <strong>Ahmed Rafi</strong> 👋 — a passionate and budding Full-Stack Developer currently learning advanced web development, backend technologies, and modern development workflows.
-        </p>
-
-        <p>
-            I love building clean, scalable, and user-focused applications that solve real-world problems. With a growing foundation in <b>JavaScript, Python, and data structures</b>, I’m always exploring new technologies.
-        </p>
-
-        <p>
-            My goal is to create impactful digital solutions that combine creativity with technology. 🚀
-        </p>
-    </div>
-</div>
-
-<div class="divider"></div>
-
-
-<!-- ================= PROJECTS SECTION ================= -->
-<div class="projects" id="project-container">
-
-    <h2 class="section-title">Projects</h2>
-
-    <div class="scrollmenu" onclick="scrollProjects()">
-        <span>Scroll</span>
-        <i class="fa-solid fa-angles-right"></i>
-    </div>
-
-    <!-- NEW 3D WRAPPER -->
-    <div class="projects-scroll-wrapper">
-
-        <div class="my-projects" id="projects">
-
-            <!-- Project 1 -->
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="project-img1.png" alt="Amazon Clone">
-                    <a href="#" class="project-link" target="_blank">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-                <div class="project-details">
-                    <h3>Amazon Clone</h3>
-                    <p>A simple Amazon clone showing homepage layout.</p>
-                    <p class="tech">Tech Stack: HTML, CSS</p>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="project-img1.png" alt="Recipe Cards">
-                    <a href="#" class="project-link" target="_blank">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-                <div class="project-details">
-                    <h3>Recipe Cards</h3>
-                    <p>A sleek app that allows users to explore & organize recipes.</p>
-                    <p class="tech">Tech Stack: React.js, CSS3</p>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="project-img1.png" alt="Portfolio">
-                    <a href="#" class="project-link" target="_blank">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-                <div class="project-details">
-                    <h3>Portfolio</h3>
-                    <p>My personal portfolio website showcasing my work.</p>
-                    <p class="tech">Tech Stack: React, CSS</p>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="project-img1.png" alt="Coming Soon">
-                    <a href="#" class="project-link" target="_blank">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-                <div class="project-details">
-                    <h3>Coming Soon</h3>
-                    <p>Exciting project in progress...</p>
-                    <p class="tech">Tech Stack: React, MongoDB</p>
-                </div>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="project-img1.png" alt="Coming Soon">
-                    <a href="#" class="project-link" target="_blank">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-                <div class="project-details">
-                    <h3>Coming Soon</h3>
-                    <p>Exciting project in progress...</p>
-                    <p class="tech">Tech Stack: React, MongoDB</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-<!-- ================= SKILLS SECTION ================= -->
-<section class="skills" id="skills">
-  <h2 class="section-title">Skills</h2>
-
-  <div class="skil">
-
-    <!-- Frontend -->
-    <div class="skills-box">
-      <h3 class="skills-heading">Frontend</h3>
-      <div class="skills-grid">
-
-        <div class="skill-card">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-          <p>HTML5</p>
-        </div>
-
-        <div class="skill-card">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
-          <p>CSS3</p>
-        </div>
-
-        <div class="skill-card">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
-          <p>JavaScript</p>
-        </div>
-
-        <div class="skill-card">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">
-          <p>TypeScript</p>
-        </div>
-
-        <div class="skill-card">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
-          <p>React</p>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Backend -->
-    <div class="skills-box">
-      <h3 class="skills-heading">Backend</h3>
-      <div class="skills-grid">
-
-        <div class="skill-card">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
-          <p>Node.js</p>
-        </div>
-
-        <div class="skill-card">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg">
-          <p>Express</p>
-        </div>
-
-        <div class="skill-card">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">
-          <p>MongoDB</p>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer" id="contact">
-
-  <div class="footer-container">
-    <div class="footer-left">
-      <h3>Ahmed Rafi</h3>
-      <p>Full-Stack Developer passionate about building modern web apps.</p>
-    </div>
-
-    <div class="footer-links">
-      <h4>Links</h4>
       <ul>
         <li><a href="#profile">Home</a></li>
         <li><a href="#About">About</a></li>
         <li><a href="#project-container">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+        <!-- Theme Toggle -->
+        <li>
+          <button id="theme-toggle" class="theme-toggle">
+            <i class="toggle-icon fa-solid fa-sun"></i>
+          </button>
+        </li>
       </ul>
     </div>
 
-    <div class="footer-social">
-      <h4>Connect</h4>
-      <div class="social-icons">
-        <a href="https://github.com/Ahmed-Rafi07" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/ahmed-rafi-12956a328/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-        <a href="https://www.instagram.com/rafi_ahmxd" target="_blank"><i class="fab fa-instagram"></i></a>
+    <!-- ================= PROFILE SECTION ================= -->
+    <div class="profile" id="profile">
+      <div class="profile-img">
+        <img src="profile-image 2.jpg" alt="Ahmed Rafi profile picture" />
+      </div>
+
+      <div class="profile-info">
+        <h1>Ahmed Rafi</h1>
+        <!-- 3D Subtitle -->
+        <h2>Aspiring Full-Stack Developer | Problem Solver | Creator</h2>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <div class="About" id="About">
+    <h1>About me</h1>
+
+    <div class="about-info">
+      <p>
+        Hi, I'm <strong>Ahmed Rafi</strong> 👋 — a passionate and budding Full-Stack Developer currently learning advanced web development, backend technologies, and modern development workflows.
+      </p>
+
+      <p>
+        I love building clean, scalable, and user-focused applications that solve real-world problems. With a growing foundation in <b>JavaScript, Python, and data structures</b>, I’m always exploring new technologies.
+      </p>
+
+      <p>
+        My goal is to create impactful digital solutions that combine creativity with technology. 🚀
+      </p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ================= PROJECTS SECTION ================= -->
+  <div class="projects" id="project-container">
+    <h2 class="section-title">Projects</h2>
+
+    <!-- Centered 3D Scroll Button -->
+    <div class="scrollmenu" onclick="scrollProjects()">
+      <span>Scroll</span>
+      <i class="fa-solid fa-angles-right"></i>
+    </div>
+
+    <!-- 3D scroll wrapper -->
+    <div class="projects-scroll-wrapper">
+      <div class="my-projects" id="projects">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="project-img1.png" alt="Amazon Clone project" />
+            <a href="#" class="project-link" target="_blank">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <div class="project-details">
+            <h3>Amazon Clone</h3>
+            <p>A simple Amazon clone showing homepage layout.</p>
+            <p class="tech">Tech Stack: HTML, CSS</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="project-img1.png" alt="Recipe Cards project" />
+            <a href="#" class="project-link" target="_blank">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <div class="project-details">
+            <h3>Recipe Cards</h3>
+            <p>A sleek app that allows users to explore &amp; organize recipes.</p>
+            <p class="tech">Tech Stack: React.js, CSS3</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="project-img1.png" alt="Portfolio project" />
+            <a href="#" class="project-link" target="_blank">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <div class="project-details">
+            <h3>Portfolio</h3>
+            <p>My personal portfolio website showcasing my work.</p>
+            <p class="tech">Tech Stack: React, CSS</p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="project-img1.png" alt="Coming Soon project" />
+            <a href="#" class="project-link" target="_blank">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <div class="project-details">
+            <h3>Coming Soon</h3>
+            <p>Exciting project in progress...</p>
+            <p class="tech">Tech Stack: React, MongoDB</p>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="project-img1.png" alt="Coming Soon project" />
+            <a href="#" class="project-link" target="_blank">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <div class="project-details">
+            <h3>Coming Soon</h3>
+            <p>Exciting project in progress...</p>
+            <p class="tech">Tech Stack: React, MongoDB</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="footer-bottom">
-    <p>© 2025 Ahmed Rafi. All rights reserved.</p>
-  </div>
-</footer>
+  <!-- ================= SKILLS SECTION ================= -->
+  <section class="skills" id="skills">
+    <h2 class="section-title">Skills</h2>
 
+    <div class="skil">
+      <!-- Frontend -->
+      <div class="skills-box">
+        <h3 class="skills-heading">Frontend</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 logo" />
+            <p>HTML5</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 logo" />
+            <p>CSS3</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" />
+            <p>JavaScript</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript logo" />
+            <p>TypeScript</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React logo" />
+            <p>React</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="skills-box">
+        <h3 class="skills-heading">Backend</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js logo" />
+            <p>Node.js</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express logo" />
+            <p>Express</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB logo" />
+            <p>MongoDB</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" id="contact">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Ahmed Rafi</h3>
+        <p>Full-Stack Developer passionate about building modern web apps.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#project-container">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a href="https://github.com/Ahmed-Rafi07" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ahmed-rafi-12956a328/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/rafi_ahmxd" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Ahmed Rafi. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

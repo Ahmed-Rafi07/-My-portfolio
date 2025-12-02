@@ -169,6 +169,7 @@ body.dark-mode .project-card {
 body.dark-mode .footer {
   background: #0b1120 !important;
 }
+
 /* =============== PROFILE SECTION =============== */
 
 .profile {
@@ -278,6 +279,8 @@ body.dark-mode .footer {
 
 /* =============== PROJECTS SECTION =============== */
 
+/* =============== PROJECTS (Original Clean Style) =============== */
+
 .projects {
   padding: 50px 12%;
 }
@@ -299,18 +302,20 @@ body.dark-mode .footer {
   background: linear-gradient(90deg, #0077ff, #ff4f81);
 }
 
+/* Simple horizontal scrolling area (NO 3D, NO glass, NO custom scrollbar) */
 .my-projects {
   display: flex;
   gap: 30px;
   overflow-x: auto;
   padding: 20px 0;
-  scrollbar-width: none;
+  scrollbar-width: none;   /* hide scrollbar on Firefox */
 }
 
 .my-projects::-webkit-scrollbar {
-  display: none;
+  display: none;  /* hide scrollbar on Chrome */
 }
 
+/* Basic clean project card (NO 3D) */
 .project-card {
   min-width: 280px;
   max-width: 300px;
@@ -321,20 +326,13 @@ body.dark-mode .footer {
   padding: 20px;
   text-align: left;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-
-  /* 3D base setup */
-  transform: perspective(900px) translateZ(0);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition: 0.3s ease;
 }
 
 .project-card:hover {
-  /* Smooth 3D hover effect */
-  transform: perspective(900px) translateZ(30px) rotateX(2deg) rotateY(1deg);
-  box-shadow:
-      0 15px 40px rgba(0,0,0,0.25),
-      0 0 25px rgba(0, 119, 255, 0.15); /* subtle glow */
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
-
 
 .project-img img {
   width: 100%;
@@ -363,6 +361,8 @@ body.dark-mode .footer {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
 
 /* =============== SKILLS SECTION =============== */
 
@@ -451,10 +451,11 @@ body.dark-mode .footer {
   padding-top: 12px;
   text-align: center;
 }
+
 /* Center the scroll menu */
 .scrollmenu {
   width: fit-content;
-  margin: 0 auto 25px auto !important;  /* centers it */
+  margin: 0 auto 25px auto !important;
   padding: 10px 24px;
   border-radius: 14px;
 
@@ -500,18 +501,16 @@ body.dark-mode .footer {
 }
 
 .scrollmenu:hover i {
-  transform: translateX(4px); /* small animation */
+  transform: translateX(4px);
 }
 
 /* ================= MOBILE RESPONSIVE FIXES ================= */
 @media (max-width: 768px) {
 
-  /* Reduce body padding so hero doesn’t drop too low */
   body {
     padding-top: 20px !important;
   }
 
-  /* ===== NAVBAR (Fix layout on phones) ===== */
   .navbar {
     min-height: auto;
     padding: 10px 15px;
@@ -525,13 +524,12 @@ body.dark-mode .footer {
     padding-right: 0;
   }
 
-  /* HIDE THEME TOGGLE (Fixes gear icon overlapping) */
+  /* Hide toggle on very small nav */
   .theme-toggle,
   .navbar ul li button.theme-toggle {
     display: none !important;
   }
 
-  /* ===== PROFILE SECTION ===== */
   .profile {
     flex-direction: column;
     padding: 28px 15px !important;
@@ -562,7 +560,6 @@ body.dark-mode .footer {
     margin-top: 5px !important;
   }
 
-  /* ===== ABOUT SECTION ===== */
   .About {
     padding: 35px 8%;
   }
@@ -571,10 +568,14 @@ body.dark-mode .footer {
     padding: 30px;
   }
 
-  /* ===== PROJECTS SECTION ===== */
+  .projects-scroll-wrapper::after {
+    width: 90%;
+  }
+
   .my-projects {
+    width: 90%;
     gap: 18px;
-    padding: 15px 5px;
+    padding: 15px 5px 8px 5px;
   }
 
   .project-card {
@@ -583,7 +584,6 @@ body.dark-mode .footer {
     height: auto;
   }
 
-  /* ===== SKILLS SECTION ===== */
   .skills {
     padding: 35px 8%;
   }
@@ -593,7 +593,6 @@ body.dark-mode .footer {
     gap: 18px;
   }
 
-  /* ===== FOOTER ===== */
   .footer {
     margin: 25px 12px 10px 12px;
     padding: 28px 12px;
@@ -606,7 +605,7 @@ body.dark-mode .footer {
   }
 }
 
-/* ================= SMALLER PHONES (iPhone SE, small Android) ================= */
+/* ================= SMALLER PHONES ================= */
 @media (max-width: 480px) {
 
   .profile-img {
