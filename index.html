@@ -4,231 +4,235 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Rafi - Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
     <script src="app.js" defer></script>
-
 </head>
-<div>
-    <header>
-          <div class="navbar">
-    <ul>
-      <li><a href="#profile">Home</a></li>
-      <li><a href="#About">About</a></li>
-      <li><a href="#project-container">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
 
-      <!-- Theme Toggle (NOW INSIDE NAVBAR) -->
-      <li>
-        <button id="theme-toggle" class="theme-toggle">
-          <i class="toggle-icon fa-solid fa-sun"></i>
-        </button>
-      </li>
-    </ul>
-  </div>
+<body>
 
+<!-- ================= NAVBAR ================= -->
+<header>
+    <div class="navbar">
+        <ul>
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#project-container">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
 
-        <div class="profile" id="profile">
-            <div class="profile-img">
-                <img src="profile-image 2.jpg" alt="My profile">
-            </div>
-            <div class="profile-info">
-                <h1>Ahmed Rafi</h1>
-                <h2>Aspiring Full-Stack Developer | Problem Solver | Creator</h2>
+            <!-- Theme Toggle -->
+            <li>
+                <button id="theme-toggle" class="theme-toggle">
+                <i class="toggle-icon fa-solid fa-sun"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
 
-            </div>
+    <!-- ================= PROFILE SECTION ================= -->
+    <div class="profile" id="profile">
+        <div class="profile-img">
+            <img src="profile-image 2.jpg" alt="My profile">
         </div>
-        <!-- <hr class="section-divider"> -->
-    </header>
-    <div class="About" id="About">
-        <h1>About me</h1>
-        <div class="about-info" id="About">
-         <p>
-          Hi, I'm <strong>Ahmed Rafi</strong> 👋 — a passionate and budding Full-Stack Developer currently learning advanced web development, backend technologies, and modern development workflows.  
-          I love building clean, scalable, and user-focused applications that solve real-world problems.  
-          With a growing foundation in <b>JavaScript, Python, and data structures</b>, I’m always exploring new tools and technologies to sharpen my craft.
+
+        <div class="profile-info">
+            <h1>Ahmed Rafi</h1>
+
+            <!-- 3D Subtitle -->
+            <h2>Aspiring Full-Stack Developer | Problem Solver | Creator</h2>
+        </div>
+    </div>
+</header>
+
+
+<!-- ================= ABOUT SECTION ================= -->
+<div class="About" id="About">
+    <h1>About me</h1>
+
+    <div class="about-info">
+        <p>
+            Hi, I'm <strong>Ahmed Rafi</strong> 👋 — a passionate and budding Full-Stack Developer currently learning advanced web development, backend technologies, and modern development workflows.
         </p>
 
         <p>
-          Beyond coding, I enjoy experimenting with new technologies, solving logical challenges, and collaborating on innovative projects.  
-          My goal is to create impactful digital solutions that combine creativity with technology. 🚀
+            I love building clean, scalable, and user-focused applications that solve real-world problems. With a growing foundation in <b>JavaScript, Python, and data structures</b>, I’m always exploring new technologies.
         </p>
 
-        </div>
+        <p>
+            My goal is to create impactful digital solutions that combine creativity with technology. 🚀
+        </p>
     </div>
-    <div class="divider"></div>
+</div>
 
-    <div class="projects" id="project-container">
-        <h2 class="section-title" style="text-align: left;">Projects</h2>
-         <div class="scrollmenu" onclick="scrollProjects()">
-            <span>Scroll </span>
-            <i class="fa-solid fa-angles-right"></i>
-         </div>
+<div class="divider"></div>
+
+
+<!-- ================= PROJECTS SECTION ================= -->
+<div class="projects" id="project-container">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="scrollmenu" onclick="scrollProjects()">
+        <span>Scroll</span>
+        <i class="fa-solid fa-angles-right"></i>
+    </div>
+
+    <!-- NEW 3D WRAPPER -->
+    <div class="projects-scroll-wrapper">
 
         <div class="my-projects" id="projects">
+
             <!-- Project 1 -->
             <div class="project-card">
                 <div class="project-img">
-                <img src="project-img1.png" alt="Amazon Clone">
-                 <a href="#" class="project-link" target="_blank">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                 </a>   
-                 </div>             
+                    <img src="project-img1.png" alt="Amazon Clone">
+                    <a href="#" class="project-link" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
                 <div class="project-details">
-                <h3>Amazon Clone</h3>
-                <p>A simple Amazone clone which shows a basic homepage design.</p>
-                <p class="tech">Tech Stack: HTML, CSS</p>
+                    <h3>Amazon Clone</h3>
+                    <p>A simple Amazon clone showing homepage layout.</p>
+                    <p class="tech">Tech Stack: HTML, CSS</p>
                 </div>
             </div>
-             <!-- Project 2 -->
+
+            <!-- Project 2 -->
             <div class="project-card">
                 <div class="project-img">
-                <img src="project-img1.png" alt="Tic tac Toe">
-                 <a href="#" class="project-link" target="_blank">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                 </a>   
-                 </div>   
+                    <img src="project-img1.png" alt="Recipe Cards">
+                    <a href="#" class="project-link" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
                 <div class="project-details">
-                <h3>Recipe Cards</h3>
-                <p>A sleek and interactive web app that allows users to explore, organize, and share their favorite recipes effortlessly.</p>
-                <p class="tech">Tech Stack: React.JS, CSS3 </p>
+                    <h3>Recipe Cards</h3>
+                    <p>A sleek app that allows users to explore & organize recipes.</p>
+                    <p class="tech">Tech Stack: React.js, CSS3</p>
                 </div>
             </div>
-             <!-- Project 3 -->
+
+            <!-- Project 3 -->
             <div class="project-card">
                 <div class="project-img">
-                <img src="project-img1.png" alt="Portfolio Site">
-                 <a href="#" class="project-link" target="_blank">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                 </a>   
-                 </div>   
+                    <img src="project-img1.png" alt="Portfolio">
+                    <a href="#" class="project-link" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
                 <div class="project-details">
-                <h3>Portfolio</h3>
-                <p>My personal potfolio website showcasing projects & skills.</p>
-                <p class="tech">Tech Stack: React, CSS  </p>
+                    <h3>Portfolio</h3>
+                    <p>My personal portfolio website showcasing my work.</p>
+                    <p class="tech">Tech Stack: React, CSS</p>
                 </div>
             </div>
-             <!-- Project 4 -->
+
+            <!-- Project 4 -->
             <div class="project-card">
                 <div class="project-img">
-                <img src="project-img1.png" alt="Coming Soon">
-                 <a href="#" class="project-link" target="_blank">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                 </a>   
-                 </div>   
+                    <img src="project-img1.png" alt="Coming Soon">
+                    <a href="#" class="project-link" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
                 <div class="project-details">
-                <h3>Coming Soon</h3>
-                <p>Exciting project in progress...</p>
-                <p class="tech">Tech Stack: React, MonoDB</p>
+                    <h3>Coming Soon</h3>
+                    <p>Exciting project in progress...</p>
+                    <p class="tech">Tech Stack: React, MongoDB</p>
                 </div>
             </div>
-             <!-- Project 5 -->
+
+            <!-- Project 5 -->
             <div class="project-card">
                 <div class="project-img">
-                <img src="project-img1.png" alt="Coming Soon">
-                 <a href="#" class="project-link" target="_blank">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                 </a>   
-                 </div>   
+                    <img src="project-img1.png" alt="Coming Soon">
+                    <a href="#" class="project-link" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
                 <div class="project-details">
-                <h3>Coming Soon</h3>
-                <p>Exciting project in progress...</p>
-                <p class="tech">Tech Stack: React, MonoDB</p>
+                    <h3>Coming Soon</h3>
+                    <p>Exciting project in progress...</p>
+                    <p class="tech">Tech Stack: React, MongoDB</p>
                 </div>
             </div>
+
         </div>
     </div>
-    <section class="skills" id="skills">
+</div>
+
+
+<!-- ================= SKILLS SECTION ================= -->
+<section class="skills" id="skills">
   <h2 class="section-title">Skills</h2>
 
-  <!-- Frontend Section Box -->
-   <div class="skil">
-  <div class="skills-box">
-    <h3 class="skills-heading">Frontend</h3>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-        <p>HTML5</p>
-      </div>
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-        <p>CSS3</p>
-      </div>
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-        <p>JavaScript</p>
-      </div>
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
-        <p>TypeScript</p>
-      </div>
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-        <p>React</p>
-      </div>
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
-        <p>Next.js</p>
-      </div>
-    </div>
-  </div>
-  <!-- Backend Section Box -->
-<div class="skills-box">
-  <h3 class="skills-heading">Backend</h3>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-      <p>Node.js</p>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express">
-      <p>Express</p>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
-      <p>MongoDB</p>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
-      <p>PostgreSQL</p>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" alt="Prisma">
-      <p>Prisma</p>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" alt="WebSocket">
-      <p>WebSocket</p>
-    </div>
-  </div>
-</div>
-<!-- Tools Section Box -->
-<div class="skills-box">
-  <h3 class="skills-heading">Tools</h3>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-      <p>Git</p>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
-      <p>Docker</p>
-    </div>
-    <div class="skill-card">
-      <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman">
-      <p>Postman</p>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="NPM">
-      <p>NPM</p>
-    </div>
-  </div>
-</div>
-</div>
+  <div class="skil">
 
+    <!-- Frontend -->
+    <div class="skills-box">
+      <h3 class="skills-heading">Frontend</h3>
+      <div class="skills-grid">
 
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+          <p>HTML5</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+          <p>CSS3</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+          <p>JavaScript</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">
+          <p>TypeScript</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+          <p>React</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="skills-box">
+      <h3 class="skills-heading">Backend</h3>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+          <p>Node.js</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg">
+          <p>Express</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">
+          <p>MongoDB</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
 </section>
-<footer class="footer">
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer" id="contact">
+
   <div class="footer-container">
     <div class="footer-left">
       <h3>Ahmed Rafi</h3>
@@ -245,16 +249,17 @@
       </ul>
     </div>
 
-    <div class="footer-social" id="contact">
+    <div class="footer-social">
       <h4>Connect</h4>
       <div class="social-icons">
         <a href="https://github.com/Ahmed-Rafi07" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/ahmed-rafi-12956a328/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
-        <a href="https://www.instagram.com/rafi_ahmxd?utm_source=ig_web_button_share_sheet&igsh=NjhoazFiaWR4enpj" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/rafi_ahmxd" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </div>
+
   <div class="footer-bottom">
     <p>© 2025 Ahmed Rafi. All rights reserved.</p>
   </div>
